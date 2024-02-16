@@ -8,7 +8,11 @@ export class TodoService {
   todoArray: Array<Itodo> = [
     {todoItem: "javascript", id: "1"},
     {todoItem: "Typescript", id: "2"},
-    {todoItem: "Angular", id: "3"}
+    {todoItem: "Angular", id: "3"},
+    {todoItem: "Bootstrap", id: "3"},
+    {todoItem: "Sass", id: "3"},
+    {todoItem: "Html", id: "3"}
+
   ];
   constructor() {
     
