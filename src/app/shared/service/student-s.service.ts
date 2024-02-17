@@ -12,7 +12,14 @@ export class StudentSService {
       email: 'jackma@gmail.com',
       contact: 8843882498,
       id: '123'
-    }
+    },
+    {
+      fname: 'alen',
+      lname: 'walker',
+      email: 'alenwalker@gmail.com',
+      contact: 8843882498,
+      id: '124'
+    },
   ]
 
   constructor() { }
