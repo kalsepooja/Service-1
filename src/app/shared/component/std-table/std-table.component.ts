@@ -14,6 +14,10 @@ export class StdTableComponent implements OnInit {
   ngOnInit(): void {
    this.stdArr = this._stdService.fetchStudentData()
    console.log(this.stdArr);
+  };
+
+  onRemoveSTd(stdId: string){
+    this._stdService.removeStd(stdId)
   }
 
 }

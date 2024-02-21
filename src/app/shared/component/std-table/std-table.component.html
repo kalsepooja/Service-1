@@ -6,6 +6,8 @@
             <th>Last Name</th>
             <th>Email</th>
             <th>Contact</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -15,10 +17,20 @@
             <td>{{std.lname}}</td>
             <td>{{std.email}}</td>
             <td>{{std.contact}}</td>
+            <td>
+                <button mat-mini-fab color="primary" aria-label="Example icon button with a edit icon">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </td>
+            <td>
+                <button mat-mini-fab color="warn" aria-label="Example icon button with a delete icon" (click)="onRemoveSTd(std.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>
 
-<p class="alert alert-info" *ngIf="stdArr.length < 0">
+<p class="alert alert-danger" *ngIf="stdArr.length < 0">
     No student is added Yet!!!
 </p>

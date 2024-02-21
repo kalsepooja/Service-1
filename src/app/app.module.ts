@@ -7,6 +7,10 @@ import { TodoFormComponent } from './shared/component/todo-form/todo-form.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { StudentFormComponent } from './shared/component/student-form/student-form.component';
 import { StdTableComponent } from './shared/component/std-table/std-table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { StdTableComponent } from './shared/component/std-table/std-table.compon
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
